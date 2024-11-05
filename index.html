@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Poppins:wght@100;200;400;500;600&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Changa:wght@200&family=Gruppo&family=Poiret+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
 <body>
@@ -17,21 +17,34 @@
         <nav> 
             <a href="index.html"><img src="img/logo.png"></a>
             <div class="navlist" id="navList">
-                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <i class="bx bx-menu" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="profile.html">About Me</a></li>
                     <li><a href="activities.html">Portfolio</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars" onclick="showMenu"></i>
+            <i class="bx bx-menu" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
-            <h1 class="animate slideInLeft animate--fast animate--delay"></h1> Cadhla Zaira Kalea</h1>
-            <h3>I'm a Web Developer</h3>
-            <a href="profile.html" class="hero-btn">Learn more</a>
+            <h1>Cadhla Zaira Kalea</h1>
+            <h3>Web Developer</h3>
+            <a href="https://github.com/kalea24" target="_blank" rel="noopener noreferrer" class="github-button">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="icon-button email-button">
+                <i class='bx bx-envelope'></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="icon-button linkedin-button">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="tel:+YOUR_PHONE_NUMBER" class="icon-button phone-button">
+                <i class='bx bxs-phone'></i>
+            </a>
+            
         </div>
+        
     </section>
 
     <section class="more">
@@ -85,17 +98,6 @@
 
 
 
-    <!-----JavaScript for toggle menu----->
-    <script>
-
-        var navList = document.getElementById("navList");
-        function showMenu(){
-            navList.style.right = "0";
-        
-        function hideMenu(){
-            navList.style.right ="-200px";
-        }
-        }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
